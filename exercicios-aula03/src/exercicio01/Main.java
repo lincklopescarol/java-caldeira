@@ -20,8 +20,15 @@ public class Main {
 //        conta.pix(300);
 //        System.out.println(conta.saldo);
 
-        conta.transferencia(yours, conta, 40);
+        // teste de transferencia
+//        conta.transferencia(yours, 40);
+//        System.out.println(conta.saldo);
+//        System.out.println(yours.saldo);
+
+        // teste de verificar informações da conta conta
+        System.out.println(conta.nome);
+        System.out.println(conta.CPF);
         System.out.println(conta.saldo);
-        System.out.println(yours.saldo);
+
     }
 }
