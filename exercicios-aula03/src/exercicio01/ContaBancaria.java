@@ -41,16 +41,12 @@ public class ContaBancaria {
             System.out.println("Erro!");
         }
     }
-
-    // arrumar essa aqui
     public void verificarsaldo() {
         this.saldo = saldo - 0;
     }
-
     public void verificarHorario() {
         this.horarioAtual = horarioAtual;
     }
-
     public void verificarInformacoes() {
         this.nome = nome;
         this.CPF = CPF;
