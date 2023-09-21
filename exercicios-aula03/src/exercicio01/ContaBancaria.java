@@ -10,6 +10,17 @@ public class ContaBancaria {
     public double saldo = 100;
     public LocalTime horarioAtual = LocalTime.now();
 
+    public boolean validarCPF() {
+
+        if (CPF.length() == 11) {
+            String primeirosNoveDigitos = CPF.substring(0,9);
+            int x = Integer.parseInt(primeirosNoveDigitos);
+            // continuar a logica aqui
+            return (true);
+        }
+        return false;
+    }
+
     public void saque(double valor) {
         this.saldo = saldo - valor;
     }
@@ -41,12 +52,16 @@ public class ContaBancaria {
             System.out.println("Erro!");
         }
     }
+
+    // arrumar essa aqui
     public void verificarsaldo() {
         this.saldo = saldo - 0;
     }
+
     public void verificarHorario() {
         this.horarioAtual = horarioAtual;
     }
+
     public void verificarInformacoes() {
         this.nome = nome;
         this.CPF = CPF;
