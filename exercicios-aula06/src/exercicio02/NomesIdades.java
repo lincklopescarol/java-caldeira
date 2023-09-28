@@ -20,14 +20,27 @@ public class NomesIdades {
             System.out.println("Nome encontrado.");
             System.out.println("A idade da pessoa com esse nome é: ");
             System.out.println(nomesIdades.get(respostaUsuario));
+
         } else {
             System.out.println("Nome não encontrado.");
         }
-
+        System.out.println("");
+        System.out.println("Lista de nomes de pessoas na terceira idade: ");
+        terceiraIdade(nomesIdades);
     }
 
+    private static void terceiraIdade(Map<String, Integer> nomesIdades) {
+        // usei for each pq é o mais recomendado com mapa
+        nomesIdades.forEach((nome, idade) -> {
+            if (idade >= 60) {
+                System.out.println(nome);
+            }
 
+        });
+    }
 }
+
+
 
 
 
