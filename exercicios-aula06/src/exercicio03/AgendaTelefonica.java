@@ -1,21 +1,43 @@
 package exercicio03;
 
-import exercicio01.Livros;
-
+import java.util.Map;
 import java.util.TreeMap;
 
 public class AgendaTelefonica {
     public static void main(String[] args) {
-        TreeMap<Integer, String> agenda = new TreeMap<>();
-        Informacoes novaInfo = new Informacoes(987654321, "Roberta", "Porto Alegre", "Norte");
-        agenda.put(novaInfo.getNumeroTelefone(), novaInfo.getNome());
-        Informacoes novaInfoDois = new Informacoes(987684331, "Flávia", "Porto Alegre", "Sul");
-        agenda.put(novaInfoDois.getNumeroTelefone(), novaInfoDois.getNome());
-//
-//        System.out.println("Nomes e números de telefone: ");
-//        for (int i = 0; i < agenda.size(); i++) {
-//            Informacoes todasInfos = agenda.get(i);
-//            System.out.println("Nome: " + todasInfos.getNome() + ", Telefone: " + todasInfos.getNumeroTelefone());
+        TreeMap<String, String> agenda = new TreeMap<>();
+
+        Informacoes novaInfo = new Informacoes("98765-4321", "Roberta", "Porto Alegre", "Norte");
+        agenda.put(novaInfo.getNome(), novaInfo.getNumeroTelefone());
+
+        Informacoes novaInfoDois = new Informacoes("98768-4331", "Flávia", "Porto Alegre", "Sul");
+        agenda.put(novaInfoDois.getNome(), novaInfoDois.getNumeroTelefone());
+
+        System.out.println("Lista de contatos em ordem alfabética: ");
+        // esse for percorre as entradas de toda a agenda
+        for (Map.Entry<String, String> entrada : agenda.entrySet()) {
+            // pega a chave -> nome e armazena na variavel
+            String nome = entrada.getKey();
+            // pega a chave -> telefone e armazena na variavel
+            String telefone = entrada.getValue();
+            System.out.println("Nome: " + nome + ", Telefone: " + telefone);
         }
+
+        String localidadeDesejada = "Norte";
+        System.out.println("Contatos na localidade " + localidadeDesejada + ": ");
+        for (Map.Entry<String, String> entrada : agenda.entrySet()) {
+            String nome = entrada.getKey();
+            String localidade = entrada.getValue();
+
+            if (localidade.equals(localidadeDesejada)) {
+                System.out.println("Nome: " + nome + ", Telefone: " + nome);
+            }
+        }
+
+
     }
+}
+
+
+
 
