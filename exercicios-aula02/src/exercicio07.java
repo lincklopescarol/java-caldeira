@@ -5,7 +5,6 @@ public class exercicio07 {
         Scanner teclado = new Scanner(System.in);
         System.out.println("Esse é um jogo de adivinhação! " +
                 "Escreva um número inteiro para palpitar quantos inimigos os soldados irão combater: ");
-
         int palpite = teclado.nextInt();
 
         if (palpite < 300000){
