@@ -9,6 +9,7 @@ public class exercicio12 {
         double cambioAtual = teclado.nextDouble();
 
         double valorConvertido = quantia / cambioAtual;
+        
         System.out.println("O valor convertido é de reais para dólares é de: " + valorConvertido);
     }
 }
