@@ -1,6 +1,16 @@
-### Minha aplicação to-do-service 
+# Exercício do Programa Geração Caldeira do Instituto Caldeira 
 
-- Criei um outro repositório para fazer a aplicação de to-do-service 
+### A proposta do exercício era desenvolver um CRUD para uma lista de tarefas! 
+- 💻 Criei outro repositório para desenvolver o exercício, para uma melhor organização.
+- 🖱️ Link do repositório com os códigos do projeto: https://github.com/lincklopescarol/to-do-service
 
-- Aqui está o link do repositório com os códigos do projeto: https://github.com/lincklopescarol/to-do-service
+### Conhecimentos praticados: 
+- Java
+- SpringBoot
+- CRUD
+- Testes unitários
+- Validações
+- Exceções
+- IDEA Intellij
+
 
