@@ -1,7 +1,7 @@
 # java-caldeira
 
-# 💻 Repositório de exercícios do Programa Geração Caldeira do Instituto Caldeira 
-- Aqui nesse repositório colocarei meus exercícios com os conhecimentos adquiridos ao longo do Programa Geração Caldeira. 
+# 💻 Repositório de exercícios do Programa Geração Caldeira 
+- Aqui nesse repositório colocarei meus exercícios com os conhecimentos adquiridos ao longo do Programa Geração Caldeira do Instituto Caldeira. 
 
 ### 🧠 Conhecimentos praticados: 
 - Java
