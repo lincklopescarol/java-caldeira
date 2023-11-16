@@ -150,14 +150,17 @@ SELECT Categoria, SUM(Quantidade) FROM Produtos
 JOIN DetalhesDoPedido ON Produtos.ID_Produto = DetalhesDoPedido.ID_Produto
 GROUP BY Categoria;
 
+-- LEVEL 4
+-- EXEMPLOS DO QUE NÃO FAZER
 
+-- Faça um UPDATE sem a clausula WHERE numa tabela e vê o que acontece;
+UPDATE Produtos
+SET Preco = 200.0;
 
+-- Tente fazer um ROLLBACK
+ROLLBACK;
 
-
-
-
-
-
-
-
-
+-- Delete uma tabela e faça SELECT;
+-- tive que deletar várias tabelas pois elas estavam com referência
+DROP TABLE Clientes, Produtos, Pedidos, DetalhesDoPedido;
+SELECT *  FROM Cliente;
